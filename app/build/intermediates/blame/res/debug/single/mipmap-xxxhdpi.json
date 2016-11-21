@@ -2,9 +2,5 @@
     {
         "merged": "/home/chris/MedDo/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
         "source": "/home/chris/MedDo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/chris/mednew/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
-        "source": "/home/chris/mednew/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }
 ]

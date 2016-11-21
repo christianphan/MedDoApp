@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
@@ -43,6 +44,11 @@ public class GraphActivity extends AppCompatActivity {
         Log.w("myApp", "1");
         Bundle bundle = getIntent().getExtras();
         int[] list = bundle.getIntArray("Amount");
+        String[] first = bundle.getStringArray("First");
+        String[] second = bundle.getStringArray("Second");
+        String[] third = bundle.getStringArray("Third");
+        String[] fourth = bundle.getStringArray("Fourth");
+        String[] fifth = bundle.getStringArray("Fifth");
 
 
         Log.w("myApp", "2");
@@ -60,20 +66,17 @@ public class GraphActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                int writePermission = ActivityCompat.checkSelfPermission(GraphActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-                int readPermission = ActivityCompat.checkSelfPermission(GraphActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE);
-
-                if (writePermission != PackageManager.PERMISSION_GRANTED || readPermission != PackageManager.PERMISSION_GRANTED) {
-
-
-                }
+                isStoragePermissionGranted();
                 chart.saveToGallery("Test", 10);
 
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"shakingwater@gmail.com"});
-                i.putExtra(Intent.EXTRA_SUBJECT, "Sup");
-                i.putExtra(Intent.EXTRA_TEXT   , "body of email");
+                i.putExtra(Intent.EXTRA_SUBJECT, "Weekly Status Report");
+                i.putExtra(Intent.EXTRA_TEXT   , "body of email" +
+                        "Test" +
+                        "test" +
+                        "test                                                     ");
                 try {
                     startActivity(Intent.createChooser(i, "Send mail..."));
                 } catch (android.content.ActivityNotFoundException ex) {
@@ -134,6 +137,35 @@ public class GraphActivity extends AppCompatActivity {
         chart.setData(data);
 
 
+    }
+
+
+    public  boolean isStoragePermissionGranted() {
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                    == PackageManager.PERMISSION_GRANTED) {
+                Log.w("APP","Permission is granted");
+                return true;
+            } else {
+
+                Log.w("APP","Permission is revoked");
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 225);
+                return false;
+            }
+        }
+        else { //permission is automatically granted on sdk<23 upon installation
+            Log.w("APP","Permission is granted");
+            return true;
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(grantResults[0]== PackageManager.PERMISSION_GRANTED){
+            Log.w("APP","Permission: "+permissions[0]+ "was "+grantResults[0]);
+            //resume tasks needing this permission
+        }
     }
 
 

@@ -4,16 +4,24 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="3dp"
     android:background="#ECEFF1"
-
     android:paddingTop="10dp"
     android:paddingBottom="10dp">
-
     <TextView
         android:id="@+id/activity_name"
-        android:textSize="30dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/gotocheck_button"
         android:layout_width="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="Go"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:paddingRight="16dp"
+        android:textSize="10sp"
+        />
 </LinearLayout>

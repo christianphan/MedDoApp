@@ -31,6 +31,12 @@ public class UserCheckInPage extends AppCompatActivity {
     Bundle b = new Bundle();
     String name = "'";
 
+    String[] arrayone = new String[total];
+    String[] arraytwo = new String[total];
+    String[] arraythree = new String[total];
+    String[] arrayfour = new String[total];
+    String[] arrayfive = new String[total];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +47,26 @@ public class UserCheckInPage extends AppCompatActivity {
 
         for(int i = 0; i < 5; i ++){
             startingarray[i] = 0;
+        }
+
+        for(int i = 0; i < 5; i ++){
+            arrayone[i] = "";
+        }
+
+        for(int i = 0; i < 5; i ++){
+            arraytwo[i] = "";
+        }
+
+        for(int i = 0; i < 5; i ++){
+            arraythree[i] = "";
+        }
+
+        for(int i = 0; i < 5; i ++){
+            arrayfour[i] = "";
+        }
+
+        for(int i = 0; i < 5; i ++){
+            arrayfive[i] = "";
         }
 
 
@@ -203,28 +229,57 @@ public class UserCheckInPage extends AppCompatActivity {
 
                 if(checkone.isChecked())
                 {
+                    if(arraycurrent < 5)
+                    {
+                        arrayone[arraycurrent] = checkone.getText().toString();
+                    }
+
                     checkone.toggle();
                 }
 
                 if(checktwo.isChecked())
                 {
+
+                    if(arraycurrent < 5)
+                    {
+                        arraytwo[arraycurrent] = checktwo.getText().toString();
+                    }
+
                     checktwo.toggle();
                 }
 
 
                 if(checkthree.isChecked())
                 {
+
+                    if(arraycurrent < 5)
+                    {
+                        arraythree[arraycurrent] = checkthree.getText().toString();
+                    }
+
                     checkthree.toggle();
                 }
 
 
                 if(checkfour.isChecked())
                 {
+
+                    if(arraycurrent < 5)
+                    {
+                        arrayfour[arraycurrent] = checkfour.getText().toString();
+                    }
+
                     checkfour.toggle();
                 }
 
                 if(checkfive.isChecked())
                 {
+
+                    if(arraycurrent < 5)
+                    {
+                        arrayfive[arraycurrent] = checkfive.getText().toString();
+                    }
+
                     checkfive.toggle();
                 }
                 arraycurrent++;
@@ -237,6 +292,11 @@ public class UserCheckInPage extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 b.putIntArray("Amount", startingarray);
+                b.putStringArray("First", arrayone);
+                b.putStringArray("Second", arraytwo);
+                b.putStringArray("Third", arraythree);
+                b.putStringArray("Fourth", arrayfour);
+                b.putStringArray("Fifth", arrayfive);
 
                 Intent i = new Intent(UserCheckInPage.this, GraphActivity.class);
                 i.putExtras(b);

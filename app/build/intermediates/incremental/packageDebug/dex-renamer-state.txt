@@ -1,4 +1,7 @@
-#Sun Nov 20 18:49:19 PST 2016
-base.0=/home/chris/mednew/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/home/chris/mednew/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Mon Nov 21 03:02:18 PST 2016
+base.0=/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f47abff30d2bd6b9a714ec70008fd041b549212
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b2874de35ea5ae376d6f8972764a735632021059/classes.dex
+base.1=/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b2874de35ea5ae376d6f8972764a735632021059
+file.0=/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f47abff30d2bd6b9a714ec70008fd041b549212/classes.dex

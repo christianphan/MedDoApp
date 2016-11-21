@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.lang.reflect.Array;
@@ -43,6 +44,7 @@ public class custom_adapter extends RecyclerView.Adapter<custom_adapter.ViewHold
     public static class ViewHolder extends RecyclerView.ViewHolder implements  View.OnClickListener {
 
         public TextView nameTextView;
+        public Button button;
 
 
         //creates viewholder
@@ -52,7 +54,8 @@ public class custom_adapter extends RecyclerView.Adapter<custom_adapter.ViewHold
             super(itemView);
 
             nameTextView = (TextView) itemView.findViewById(R.id.activity_name);
-            nameTextView.setOnClickListener(this);
+            Button go = (Button) itemView.findViewById(R.id.gotocheck_button);
+            go.setOnClickListener(this);
 
         }
 
