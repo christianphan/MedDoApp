@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="New User"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="40dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="First Name"
+            android:textSize="20sp"
+            android:layout_weight="5"
+            android:layout_width="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"/>
+
+        <EditText
+            android:layout_width="30dp"
+            android:id="@+id/FirstName"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:hint="Enter"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="20dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="Last Name"
+            android:textSize="20sp"
+            android:layout_weight="5"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"/>
+
+        <EditText
+            android:layout_width="30dp"
+            android:id="@+id/LastName"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:hint="Enter"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="Email"
+            android:textSize="20sp"
+            android:layout_weight="5"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"/>
+
+        <EditText
+            android:layout_width="30dp"
+            android:id="@+id/Email"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:hint="Enter"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="User Name"
+            android:textSize="20sp"
+            android:layout_weight="5"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"/>
+
+        <EditText
+            android:layout_width="30dp"
+            android:id="@+id/username"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:hint="Enter"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="Password"
+            android:textSize="20sp"
+            android:layout_weight="5"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"/>
+
+        <EditText
+            android:layout_width="30dp"
+            android:id="@+id/password"
+            android:layout_marginRight="30dp"
+            android:layout_weight="5"
+            android:hint="Enter"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/Submit"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+  </LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/chris/mednew/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/chris/mednew/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_e050db18056320fd4ba9ae61dffd7a154ed85146.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/chris/mednew/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/chris/mednew/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_77b4f173461d48df58cb681151ab685752755db4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/chris/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.1/369f9aa48a629b4e92557b37326f42dc3de796e4/MPAndroidChart-v3.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="/home/chris/mednew/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v3.0.1_0b28807f5d74c2ac7408ac342e3c859b309da995.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/chris/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/home/chris/mednew/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_7936ff92fd3e4ca6fcfbdb19d479bb5c46066102.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/chris/mednew/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/chris/mednew/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_8120070cb279c01c372062b50d158bc8ce1c284e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/chris/mednew/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/home/chris/mednew/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.0.1_7e75c2e8204eebbdf677f30d5b2a037892e009a5.jar" />
+    </item>
+
+</items>
