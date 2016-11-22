@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="c8b0b76308f72099534653d18add8f9a5f898764">
+        sha1="6b802db3f13acb313c9f07e2134a03265186cc87">
         <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b2874de35ea5ae376d6f8972764a735632021059/classes.dex" />
     </item>
     <item
@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="dfbf6d512163823a465c8a3e984a184f2eeda700">
+        sha1="d4fc81af4db875b45bafd7ad065e969ca2a6b719">
         <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f47abff30d2bd6b9a714ec70008fd041b549212/classes.dex" />
     </item>
 

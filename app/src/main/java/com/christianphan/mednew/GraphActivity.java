@@ -37,6 +37,7 @@ public class GraphActivity extends AppCompatActivity {
     String emailbody = "";
     int listsize = 0;
     int daysize = 0;
+    String name = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,7 @@ public class GraphActivity extends AppCompatActivity {
         String[] third = bundle.getStringArray("Third");
         String[] fourth = bundle.getStringArray("Fourth");
         String[] fifth = bundle.getStringArray("Fifth");
+        name = bundle.getString("Name");
 
 
         for (int i = 0; i < 5; i++) {
@@ -64,7 +66,29 @@ public class GraphActivity extends AppCompatActivity {
         if (listsize > 0) {
             emailbody += "Objectives completed " + Integer.toString(daysize) + " days ago: ";
             listsize--;
-            emailbody += first[0] + " " + second[0] + " " + third[0] + " " + fourth[0] + " " + fifth[0];
+
+
+            if(first[0] != "")
+            {
+                emailbody += first[0] + " ";
+            }
+            if(second[0] != "")
+            {
+                emailbody += second[0] + " ";
+
+            }
+            if(third[0] != "")
+            {
+                emailbody += third[0] + " ";
+            }
+            if(fourth[0] != "")
+            {
+                emailbody += fourth[0] + " ";
+            }
+            if(fifth[0] != "")
+            {
+                emailbody += fifth[0] + " ";
+            }
         }
 
 
@@ -73,7 +97,30 @@ public class GraphActivity extends AppCompatActivity {
         if (listsize > 0) {
             emailbody += ". Objectives completed " + Integer.toString(daysize) + " days ago: ";
             listsize--;
-            emailbody += first[1] + ", " + second[1] + ", " + third[1] + ", " + fourth[1] + ", " + fifth[1];
+
+            if(first[0] != "")
+            {
+                emailbody += first[1] + " ";
+            }
+            if(second[0] != "")
+            {
+                emailbody += second[1] + " ";
+
+            }
+            if(third[0] != "")
+            {
+                emailbody += third[1] + " ";
+            }
+            if(fourth[0] != "")
+            {
+                emailbody += fourth[1] + " ";
+            }
+            if(fifth[0] != "")
+            {
+                emailbody += fifth[1] + " ";
+            }
+
+
         }
 
 
@@ -84,7 +131,27 @@ public class GraphActivity extends AppCompatActivity {
         if (listsize > 0) {
             emailbody += ". Objectives completed " + Integer.toString(daysize) + " days ago: ";
             listsize--;
-            emailbody += first[2] + ", " + second[2] + ", " + third[2] + ", " + fourth[2] + ", " + fifth[2];
+            if(first[0] != "")
+            {
+                emailbody += first[2] + " ";
+            }
+            if(second[0] != "")
+            {
+                emailbody += second[2] + " ";
+
+            }
+            if(third[0] != "")
+            {
+                emailbody += third[2] + " ";
+            }
+            if(fourth[0] != "")
+            {
+                emailbody += fourth[2] + " ";
+            }
+            if(fifth[0] != "")
+            {
+                emailbody += fifth[2] + " ";
+            }
         }
 
 
@@ -95,7 +162,27 @@ public class GraphActivity extends AppCompatActivity {
             {
                 emailbody +=  ". Objectives completed " + Integer.toString(daysize)  + " days ago: ";
                 listsize--;
-                emailbody += first[3] + ", " + second[3] + ", " + third[3] + ", " + fourth[3] + ", " + fifth[3];
+                if(first[0] != "")
+                {
+                    emailbody += first[3] + " ";
+                }
+                if(second[0] != "")
+                {
+                    emailbody += second[3] + " ";
+
+                }
+                if(third[0] != "")
+                {
+                    emailbody += third[3] + " ";
+                }
+                if(fourth[0] != "")
+                {
+                    emailbody += fourth[3] + " ";
+                }
+                if(fifth[0] != "")
+                {
+                    emailbody += fifth[3] + " ";
+                }
             }
 
 
@@ -106,7 +193,28 @@ public class GraphActivity extends AppCompatActivity {
             {
                 emailbody +=  ". Objectives completed " + Integer.toString(daysize)  + " days ago: ";
                 listsize--;
-                emailbody += first[4] + ", " + second[4] + ", " + third[4] + ", " + fourth[4] + ", " + fifth[4];
+
+                if(first[0] != "")
+                {
+                    emailbody += first[4] + " ";
+                }
+                if(second[0] != "")
+                {
+                    emailbody += second[4] + " ";
+
+                }
+                if(third[0] != "")
+                {
+                    emailbody += third[4] + " ";
+                }
+                if(fourth[0] != "")
+                {
+                    emailbody += fourth[4] + " ";
+                }
+                if(fifth[0] != "")
+                {
+                    emailbody += fifth[4] + " ";
+                }
             }
 
 
@@ -134,7 +242,7 @@ public class GraphActivity extends AppCompatActivity {
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"shakingwater@gmail.com"});
-                i.putExtra(Intent.EXTRA_SUBJECT, "Weekly Status Report");
+                i.putExtra(Intent.EXTRA_SUBJECT, "Weekly Status Report: " + name);
                 i.putExtra(Intent.EXTRA_TEXT   , emailbody);
                 try {
                     startActivity(Intent.createChooser(i, "Send mail..."));

@@ -29,7 +29,7 @@ public class UserCheckInPage extends AppCompatActivity {
     int arraycurrent= 0;
     int[] startingarray = new int[total];
     Bundle b = new Bundle();
-    String name = "'";
+    String name = "";
 
     String[] arrayone = new String[total];
     String[] arraytwo = new String[total];
@@ -297,6 +297,7 @@ public class UserCheckInPage extends AppCompatActivity {
                 b.putStringArray("Third", arraythree);
                 b.putStringArray("Fourth", arrayfour);
                 b.putStringArray("Fifth", arrayfive);
+                b.putString("Name",name );
 
                 Intent i = new Intent(UserCheckInPage.this, GraphActivity.class);
                 i.putExtras(b);
