@@ -64,6 +64,10 @@
         "source": "/home/chris/MedDo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
+        "merged": "/home/chris/MedDo/app/build/intermediates/res/merged/debug/drawable/imagelogo.jpg",
+        "source": "/home/chris/MedDo/app/src/main/res/drawable/imagelogo.jpg"
+    },
+    {
         "merged": "/home/chris/MedDo/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/home/chris/MedDo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_list_selector_holo_dark.xml"
     },

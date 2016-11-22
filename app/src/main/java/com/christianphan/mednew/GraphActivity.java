@@ -34,6 +34,9 @@ import java.util.ArrayList;
 public class GraphActivity extends AppCompatActivity {
 
     String[] entries = new String[5];
+    String emailbody = "";
+    int listsize = 0;
+    int daysize = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,65 @@ public class GraphActivity extends AppCompatActivity {
         String[] third = bundle.getStringArray("Third");
         String[] fourth = bundle.getStringArray("Fourth");
         String[] fifth = bundle.getStringArray("Fifth");
+
+
+        for (int i = 0; i < 5; i++) {
+            if (list[i] != 0) {
+                listsize++;
+            }
+        }
+        daysize = listsize - 1;
+
+        if (listsize > 0) {
+            emailbody += "Objectives completed " + Integer.toString(daysize) + " days ago: ";
+            listsize--;
+            emailbody += first[0] + " " + second[0] + " " + third[0] + " " + fourth[0] + " " + fifth[0];
+        }
+
+
+        daysize = listsize - 1;
+
+        if (listsize > 0) {
+            emailbody += ". Objectives completed " + Integer.toString(daysize) + " days ago: ";
+            listsize--;
+            emailbody += first[1] + ", " + second[1] + ", " + third[1] + ", " + fourth[1] + ", " + fifth[1];
+        }
+
+
+
+
+        daysize = listsize - 1;
+
+        if (listsize > 0) {
+            emailbody += ". Objectives completed " + Integer.toString(daysize) + " days ago: ";
+            listsize--;
+            emailbody += first[2] + ", " + second[2] + ", " + third[2] + ", " + fourth[2] + ", " + fifth[2];
+        }
+
+
+
+
+            daysize = listsize -1;
+            if(listsize > 0)
+            {
+                emailbody +=  ". Objectives completed " + Integer.toString(daysize)  + " days ago: ";
+                listsize--;
+                emailbody += first[3] + ", " + second[3] + ", " + third[3] + ", " + fourth[3] + ", " + fifth[3];
+            }
+
+
+
+            daysize = listsize -1;
+
+            if(listsize > 0)
+            {
+                emailbody +=  ". Objectives completed " + Integer.toString(daysize)  + " days ago: ";
+                listsize--;
+                emailbody += first[4] + ", " + second[4] + ", " + third[4] + ", " + fourth[4] + ", " + fifth[4];
+            }
+
+
+
 
 
         Log.w("myApp", "2");
@@ -67,16 +129,13 @@ public class GraphActivity extends AppCompatActivity {
 
 
                 isStoragePermissionGranted();
-                chart.saveToGallery("Test", 10);
+                chart.saveToGallery("GraphReport", 10);
 
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"shakingwater@gmail.com"});
                 i.putExtra(Intent.EXTRA_SUBJECT, "Weekly Status Report");
-                i.putExtra(Intent.EXTRA_TEXT   , "body of email" +
-                        "Test" +
-                        "test" +
-                        "test                                                     ");
+                i.putExtra(Intent.EXTRA_TEXT   , emailbody);
                 try {
                     startActivity(Intent.createChooser(i, "Send mail..."));
                 } catch (android.content.ActivityNotFoundException ex) {
@@ -137,7 +196,10 @@ public class GraphActivity extends AppCompatActivity {
         chart.setData(data);
 
 
-    }
+
+}
+
+
 
 
     public  boolean isStoragePermissionGranted() {

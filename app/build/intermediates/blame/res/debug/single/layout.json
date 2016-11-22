@@ -36,12 +36,12 @@
         "source": "/home/chris/MedDo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "/home/chris/MedDo/app/build/intermediates/res/merged/debug/layout/login.xml",
-        "source": "/home/chris/MedDo/app/src/main/res/layout/login.xml"
-    },
-    {
         "merged": "/home/chris/MedDo/app/build/intermediates/res/merged/debug/layout/listofactivities_layout.xml",
         "source": "/home/chris/MedDo/app/src/main/res/layout/listofactivities_layout.xml"
+    },
+    {
+        "merged": "/home/chris/MedDo/app/build/intermediates/res/merged/debug/layout/login.xml",
+        "source": "/home/chris/MedDo/app/src/main/res/layout/login.xml"
     },
     {
         "merged": "/home/chris/MedDo/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",

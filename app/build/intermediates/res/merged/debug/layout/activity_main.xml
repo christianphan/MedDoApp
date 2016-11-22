@@ -3,19 +3,10 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:paddingLeft="16dp"
+    android:background="#ffffff"
     android:paddingRight="16dp"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="MedDo"
-        android:id="@+id/textView"
-        android:layout_marginTop="98dp"
-        android:textSize="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
     <Button
         style="@style/Widget.AppCompat.Button.Colored"
@@ -42,4 +33,13 @@
         android:onClick="open_Newuser_Login"
 
         />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imagelogo"
+        android:layout_above="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" />
 </RelativeLayout>

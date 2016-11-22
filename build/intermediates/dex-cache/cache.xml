@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/chris/MedDo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="42cf56a8af4d46274d45f5af22c7a7b3bae16214">
-        <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b2874de35ea5ae376d6f8972764a735632021059/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/chris/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.1/369f9aa48a629b4e92557b37326f42dc3de796e4/MPAndroidChart-v3.0.1.jar"
         jumboMode="true"
         optimize="true"
@@ -27,15 +18,6 @@
         revision="23.0.2"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
         <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_b882080e3121328bfaeaac8d46765e21b6289b14/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/chris/MedDo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_16e9ddbec97781a8f4bff9e566497d9e99416878/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,11 +48,29 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/chris/MedDo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c8b0b76308f72099534653d18add8f9a5f898764">
+        <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b2874de35ea5ae376d6f8972764a735632021059/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/chris/MedDo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_16e9ddbec97781a8f4bff9e566497d9e99416878/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/chris/MedDo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="12bd24f8f546c9ad561fa6ed65f1ea0b0f405ef0">
+        sha1="dfbf6d512163823a465c8a3e984a184f2eeda700">
         <dex dex="/home/chris/MedDo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6f47abff30d2bd6b9a714ec70008fd041b549212/classes.dex" />
     </item>
 
